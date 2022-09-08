@@ -1,12 +1,20 @@
 # Myelin-Water-Fraction
 Codes related to generating myelin water fraction maps using MCDESPOT sequence
+
+Programs used: QUIT (Quantitative imaging toolkit), FSL, 3DSlicer, Dcm2Nii
+
 NOTE** code uses name specific commands. Please edit the code where indicated to rename folder names to better fit your project
 
 In the code, use the 'find and replace'  tool to change the following folder names to the names of your own folders
+
 B1MAP = B1Map_0008
+
 DESPOT1 = SAG_DESPOT1-SEAN_0004
+
 DESPOT2_P0 = SAG_DESPOT2_AP_P0_0005
+
 DESPOT2_P180 = SAG_DESPOT2_AP_180_0006
+
 MPRAGE = MPRAGE_0003
 
 This code takes additional steps for the B1Map like dividing the intensity by 800 and taking only the last 11 images (out of 22). If you're sequence is different and you have your own B1Map already generated and properly preprocessed. UNCHECK the B1Map option while running "Convert DICOM" and 'Generate Mask" commands. RECHECK the B1Map option when running the remainder of the buttons.
